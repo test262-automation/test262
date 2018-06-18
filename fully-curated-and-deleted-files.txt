@@ -1,2 +1,3 @@
 implementation-contributed/javascriptcore/262-fully-curated-vendor-not-modified/Array.prototype_methods_Array.prototype.find.js
 implementation-contributed/javascriptcore/262-fully-curated-vendor-modified/Array.prototype_methods_Array.prototype.find.js
+implementation-contributed/javascriptcore/262-fully-curated-vendor-deleted/Array.prototype_methods_Array.prototype.find.js
