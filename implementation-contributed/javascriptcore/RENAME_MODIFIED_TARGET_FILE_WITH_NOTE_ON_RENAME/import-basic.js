@@ -29,19 +29,7 @@ var abort = $vm.abort;
         shouldBe(String(error), `Error: out`);
     }
 
-    {
-        async function load(cond) {
-            if (cond)
-                return import('./import-tests/cocoa.js');
-            return undefined;
-        }
-
-        let v = await load(false);
-        shouldBe(v, undefined);
-        let v2 = await load(true);
-        let v3 = await import('./import-tests/cocoa.js');
-        shouldBe(v2, v2);
-    }
+    // partially curate import-basic.js
 
     {
         let value = './import-tests/cocoa.js';
