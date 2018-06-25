@@ -85,29 +85,7 @@ function shouldThrow(func, errorMessage) {
     }
 }());
 
-(function () {
-    function *gen() {
-        try {
-            yield 42;
-        } finally {
-            return 400;
-        }
-    }
-
-    {
-        let g = gen();
-        shouldBeIteratorResult(g.next(), { value: 42, done: false });
-        shouldBeIteratorResult(g.return(0), { value: 400, done: true });
-        shouldBeIteratorResult(g.return(0), { value: 0, done: true });
-    }
-    {
-        let g = gen();
-        shouldBeIteratorResult(g.return(0), { value: 0, done: true });
-        shouldBeIteratorResult(g.next(), { value: undefined, done: true });
-        shouldBeIteratorResult(g.return(42), { value: 42, done: true });
-    }
-}());
-
+// partially modify the generator-return.js file
 
 (function () {
     function *gen() {
