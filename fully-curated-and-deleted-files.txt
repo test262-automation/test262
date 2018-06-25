@@ -1,4 +1,9 @@
-implementation-contributed/javascriptcore/262-fully-curated-vendor-not-modified/Array.prototype_methods_Array.prototype.find.js
-implementation-contributed/javascriptcore/262-fully-curated-vendor-modified/Array.prototype_methods_Array.prototype.find.js
-implementation-contributed/javascriptcore/262-fully-curated-vendor-deleted/Array.prototype_methods_Array.prototype.find.js
-implementation-contributed/javascriptcore/262-fully-curated-vendor-rename/Array.prototype_methods_Array.prototype.find.js
+implementation-contributed/javascriptcore/262-fully-curated-vendor-deleted/array-push.js
+implementation-contributed/javascriptcore/262-fully-curated-vendor-modified/array-indexof.js
+implementation-contributed/javascriptcore/262-fully-curated-vendor-not-modified/array-flatten.js
+implementation-contributed/javascriptcore/262-fully-curated-vendor-rename/basic-weakmap.js
+implementation-contributed/javascriptcore/RE_EXPORT_SOURCE_WITH_NOTE_ON_PREVIOUS_TARGET_DELETION/global-is-nan.js
+implementation-contributed/javascriptcore/RE_EXPORT_RENAMED_SOURCE_WITH_NOTE_ON_PREVIOUS_TARGET_DELETION/generator-yield-star.js
+implementation-contributed/javascriptcore/RE_EXPORT_SOURCE_NEW_EXTENSION_WITH_NOTE_ON_PREVIOUS_TARGET_DELETION_AND_EXTENSION/has-custom-properties.js
+
+
