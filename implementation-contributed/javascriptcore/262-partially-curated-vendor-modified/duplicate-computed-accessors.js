@@ -338,35 +338,7 @@ function shouldBe(actual, expected) {
     shouldBe(Cocoa.taste, 'great');
 }());
 
-(function () {
-    var counter = 0;
-    function method1() {
-        shouldBe(counter++, 0);
-        return 'taste';
-    }
-    function method2() {
-        shouldBe(counter++, 1);
-        return 'taste';
-    }
-
-    let Cocoa = {
-        get 'taste'() {
-            return 'bad';
-        },
-
-        get [method1()]() {
-            return this.value;
-        },
-
-        set [method2()](value) {
-            this.value = value;
-        }
-    }
-
-    shouldBe(Cocoa.taste, undefined);
-    Cocoa.taste = 'great';
-    shouldBe(Cocoa.taste, 'great');
-}());
+// Paritally modify duplicate-computed-accessors.js
 
 (function () {
     var counter = 0;
