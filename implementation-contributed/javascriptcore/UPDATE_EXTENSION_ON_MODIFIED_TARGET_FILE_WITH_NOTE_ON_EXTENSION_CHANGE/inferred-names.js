@@ -111,15 +111,7 @@ assert( (function(func = function*(){}) { return func.name })() === "func" );
 assert( (function(func = ()=>{}) { return func.name })() === "func" );
 assert( (function(klass = class{}) { return klass.name })() === "klass" );
 
-// Parameter Destructuring default value.
-assert( (function({func = function(){}}) { return func.name })({}) === "func" );
-assert( (function({func = function*(){}}) { return func.name })({}) === "func" );
-assert( (function({func = ()=>{}}) { return func.name })({}) === "func" );
-assert( (function([func = function(){}]) { return func.name })([]) === "func" );
-assert( (function([func = function*(){}]) { return func.name })([]) === "func" );
-assert( (function([func = ()=>{}]) { return func.name })([]) === "func" );
-assert( (function({klass = class{}}) { return klass.name })({}) === "klass" );
-assert( (function([klass = class{}]) { return klass.name })([]) === "klass" );
+// partially curate inferred-names.js
 
 assert( (({func = function(){}}) => { return func.name })({}) === "func" );
 assert( (({func = function*(){}}) => { return func.name })({}) === "func" );
