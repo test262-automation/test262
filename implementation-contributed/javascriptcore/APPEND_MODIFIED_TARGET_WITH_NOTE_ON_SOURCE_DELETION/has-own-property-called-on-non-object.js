@@ -13,6 +13,9 @@ let has = ({}).hasOwnProperty;
 function foo(o) {
     return has.call(o, "foo");
 }
+
+// Partially curate has-own-property-called-on-non-object.js
+
 noInline(foo);
 
 for (let i = 0; i < 10000; i++)
