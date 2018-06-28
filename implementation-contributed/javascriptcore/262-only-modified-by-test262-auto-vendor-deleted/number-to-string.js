@@ -78,3 +78,5 @@ function expected(num, radix)
     shouldBe(doubleToString(-0.1), `-0.1999999999999a`);
     shouldBe(doubleToString(new Number(0xff)), `ff`);
 }
+
+// modify number-to-string.js
